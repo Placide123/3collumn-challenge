@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+  background-color: hsl(0, 0%, 95%); 
+  height: 100vh; 
+}
+.conta{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid;
+    border-radius: 5px;
+   margin: 100px;
+}
+
+
+.conta .container{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+    /* align-items: center; */
+   
+    
+}
+
+.container .column1{
+    height: 80vh;
+   
+    background-color:hsl(31, 77%, 52%) ;
+    padding: 20px;
+
+}
+
+.container .column2 {
+    background-color: hsl(184, 100%, 22%);
+    padding: 20px;
+    height: 80vh;
+   
+}
+.container .column3{
+    background-color: hsl(179, 100%, 13%);
+    padding: 20px;
+    height: 80vh;
+    
+}
+.column1 p,
+.column2 p,
+.column3 p{
+    display: inline-block;
+    width: 220px;
+    color:hsla(0, 0%, 100%, 0.75);
+    font-size: 15px;
+    font-family: lexend Deca;
+    font-weight: 400;
+    margin: 30px;
+}
+
+.column1 h1,
+.column2 h1,
+.column3 h1{
+    color: hsl(0, 0%, 95%);
+    font-size: 15px;
+    font-family: Big Shoulders Display;
+    font-weight: 700;
+    margin: 30px;
+}
+.conta .container .column1 a,
+.conta .container .column2 a,
+.conta .container .column3 a{
+    display: inline-block;
+   
+    margin-left: 30px;
+    border: 1.5px solid hsl(0, 0%, 95%);
+    border-radius: 20px;
+    margin-top: 50px;
+    
+    text-decoration: none;
+    padding: 10px 20px;
+    color: hsla(0, 0%, 100%, 0.75);;
+}
+.column1 img,
+.column2 img,
+.column3 img{
+margin: 20px;
+}
+.container .column1 a:hover{
+    color: hsl(31, 77%, 52%) ;
+    background-color: hsl(0, 0%, 95%);;
+}
+
+.container .column2 a:hover{
+    color: hsl(184, 100%, 22%);
+    background-color: hsl(0, 0%, 95%);;
+}
+.container .column3 a:hover{
+    color: hsl(179, 100%, 13%);
+    background-color: hsl(0, 0%, 95%);;
+}
+
+@media (min-width:375px)and (max-width:550px){
+
+    .conta .container{
+    
+       
+        flex-direction: column;
+        justify-content: center;
+        
+        /* align-items: center; */
+       
+        
+    }
+    
+
+}
